@@ -1,9 +1,10 @@
-import React from 'reac'
+import React from 'react'
+import Home from './Components/Home'
 
 export default function App() {
   return (
     <>
-      <h1>Init Code</h1>
+      <Home />
     </>
   )
 }
