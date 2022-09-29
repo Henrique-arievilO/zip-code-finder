@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import * as S from './style'
 
 export default function Modal() {
     const [input, setInput] = useState('');
@@ -25,14 +26,16 @@ export default function Modal() {
     }
 
     return (
-        <>
-            <input value={input} onChange={e => setInput(e.target.value)} />
-            <button onClick={() => { getCEP() }}>Pesquisar</button>
-            <div>
-                <h3>{adress.rua}</h3>
-                <p>{adress.bairro}</p>
-                <p>{adress.cidade} {adress.estado}</p>
-            </div>
-        </>
+        <S.Modal>
+            <S.Box>
+                <S.Input value={input} onChange={e => setInput(e.target.value)} />
+                <S.Button onClick={() => { getCEP() }}></S.Button>
+            </S.Box>
+            <S.Container>
+                <S.Subtitle>{adress.rua}</S.Subtitle>
+                <S.P>{adress.bairro}</S.P>
+                <S.P>{adress.cidade} {adress.estado}</S.P>
+            </S.Container>
+        </S.Modal>
     )
 }
