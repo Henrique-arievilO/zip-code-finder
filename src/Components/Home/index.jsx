@@ -10,10 +10,12 @@ export default function Home() {
     }
 
     return (
+
         <S.Section>
             <S.Title>Buscador de CEP</S.Title>
             <S.Button onClick={() => { Modal() }}>{click ? 'Voltar' : 'Ir'}</S.Button>
             {click && <Form />}
         </S.Section>
+
     )
 }

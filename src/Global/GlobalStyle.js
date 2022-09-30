@@ -26,7 +26,6 @@ export const GlobalStyle = createGlobalStyle`
         body{
         width: 100%;
         height: 100vh;
-        padding: 2.5rem 1rem;
         background: var(--violet500);
         ::-webkit-scrollbar{
             display: none;

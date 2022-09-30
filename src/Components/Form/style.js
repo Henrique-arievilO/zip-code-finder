@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Modal = styled.section`
     width: 30%;
     height: 250px;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     padding: 30px;
     border-radius: 1rem;
     background-color: var(--violet300);
@@ -12,6 +12,13 @@ export const Modal = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 800px) {
+        width: 50%;
+    }
+    @media (max-width: 500px) {
+        width: 90%;
+    }
 `
 export const Box = styled.div`
     width: 100%;

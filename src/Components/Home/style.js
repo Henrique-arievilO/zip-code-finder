@@ -1,18 +1,27 @@
 import styled from 'styled-components';
 export const Section = styled.section`
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 50px);
+    padding: 2rem 1rem;
+
+    @media (max-width: 500px) {
+        padding: 1rem;
+    }
 `
 
 export const Title = styled.h1`
     text-align: center;
     font-family: var(--primaryFont);
     font-size: 50px;
+
+    @media (max-width: 500px) {
+        font-size: 35px;
+    }
 `
 export const Button = styled.button`
     width: 5rem;
     height: 30px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
