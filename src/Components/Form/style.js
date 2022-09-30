@@ -1,14 +1,17 @@
 import styled from 'styled-components';
-import Background from '../../assets/search.png'
 
 export const Modal = styled.section`
     width: 30%;
-    height: 200px;
+    height: 250px;
     margin: 0 auto;
     padding: 30px;
     border-radius: 1rem;
     background-color: var(--violet300);
     box-shadow: 5px 5px 10px var(--violet900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 `
 export const Box = styled.div`
     width: 100%;
@@ -16,9 +19,16 @@ export const Box = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    #singleButton{
+        width: 70px;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
     `
 export const Input = styled.input`
-    width: calc(95% - 30px);
+    width: calc(90% - 30px);
     height: 30px;
     text-align: center;
     font-family: var(--secundaryFont);
@@ -29,20 +39,22 @@ export const Input = styled.input`
     `
 export const Button = styled.button`
     width: 30px;
-    height: 30px;
-    border: none;
+    margin: 0 auto;
+    border: 1px solid var(--violet700);
     border-radius: 5px;
+    box-shadow: 2px 2px 4px var(--violet900);
     background-color: var(--violet600);
-    background-image: url(${Background});
-    background-size: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: var(--secundaryFont);
     cursor: pointer;
     
     &:hover{
         background-color: var(--violet500);
+        box-shadow: none;
     }
     `
+export const Image = styled.img`
+    width: 80%;
+`
 export const Container = styled.div`
     width: 100%;
     height: 90px;

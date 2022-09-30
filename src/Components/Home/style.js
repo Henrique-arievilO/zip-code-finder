@@ -18,6 +18,7 @@ export const Button = styled.button`
     transform: translateX(-50%);
     border-radius: 5px;
     border: 1px solid var(--violet700);
+    box-shadow: 2px 2px 4px var(--violet900);
     background-color: var(--violet600);
     font-family: var(--secundaryFont);
     font-size: 1.2rem;
